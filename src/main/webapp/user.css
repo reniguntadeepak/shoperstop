@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+.card1 {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 90vw;
+    height: 70vh;
+}
+
+.card2 {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 20vw;
+}
+
+.slide {
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    background: rgba(239, 198, 84, 255);
+    height: 60vh;
+    width: 55vw;
+    top: 20vh;
+    right: -52.5vw;
+    text-align: left;
+    transition: 1s;
+    z-index: 2;
+    margin-top: 170vh;
+}
+
+.slide1 {
+    cursor: pointer;
+    background: black;
+    display: flex;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    font-size: 23px;
+    color: white;
+    height: 60vh;
+    width: 5vh;
+    border: 1px solid black;
+}
+
+.slide2 {
+    cursor: pointer;
+    background: black;
+    display: flex;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    font-size: 23px;
+    color: white;
+    height: 60vh;
+    width: 5vh;
+    border: 1px solid black;
+}
+
+.t {
+    margin-top: 20px;
+}

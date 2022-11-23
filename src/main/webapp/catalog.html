@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title>ShoppingStop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+
+<body>
+	<!-- ----nav bar------ -->
+    <div class="nav2">
+        <div class="nav1">
+            <nav>
+                <a href="index.html"><img src="companylogo.png" alt=""></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="test.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="signin.html">Signin</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <!-- ------------cards-------------- -->
+    <div class="c">
+        <div class='a'>
+            <div class="b">
+                <img src="e1.webp">
+                <h4>ZARA$2999</h4>
+            </div>
+            <div class="b">
+                <img src="e2.webp">
+                <h4>USPOllO$4999</h4>
+            </div>
+            <div class="b">
+				<img src="e6.webp">
+                <h4>Allen Solly$5999</h4>
+            </div>
+            <div class="b">
+				<img src="e7.jpg">
+                <h4>ARROW$2999</h4>
+            </div>
+            <div class="b">
+				<img src="e10.webp">
+                <h4>USPOllO$3999</h4>
+            </div>
+            <div class="b">
+				<img src="e11.jpg">
+                <h4>Allen Solly$4999</h4>
+            </div>
+            <div class="b">
+				<img src="e16.jpg">
+                <h4>Peter England$2999</h4>
+            </div>
+            <div class="b">
+				<img src="e17.jpg">
+                <h4>USPOllO$5999</h4>
+            </div>
+            <div class="b">
+				<img src="e18.jpg">
+                <h4>Louis Philippe$2999</h4>
+            </div>
+            <div class="b">
+				<img src="e19.jpg">
+                <h4>USPOllO$3999</h4>
+            </div>
+            <div class="b">
+				<img src="e20.jpg">
+                <h4>Wrangler$4999</h4>
+            </div>
+            <div class="b">
+				<img src="e21.webp">
+                <h4>Allen Solly$2999</h4>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- ---javascript---- -->
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showmenu() {
+        navlinks.style.right = "0";
+    }
+    function hidemenu() {
+        navlinks.style.right = "-200";
+    }
+</script>
+
+</html>

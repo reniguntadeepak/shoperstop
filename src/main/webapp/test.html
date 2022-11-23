@@ -1,0 +1,181 @@
+<html>
+
+<head>
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title>ShoppingStop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+<!-- ----nav bar------ -->
+    <div class="nav2">
+        <div class="nav1">
+            <nav>
+                <a href="index.html"><img src="companylogo.png"
+                        alt=""></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <div class="c">
+                            <li><a href="test.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="signin.html">Signin</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </div> 
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+        </div>
+    </div>
+<!-- ----50% sale image------ -->
+    <div class="box2">
+        <img src="sale.gif" alt="">
+    </div>
+<!-- ------cover image--------- -->
+    <div class="image">
+        <section class="header">
+        
+        </section>
+    </div>
+<!-- ---------qulaity image------- -->
+    <div class="image">
+        <img src="" alt="">
+    </div>
+    <div class="box1">
+        <img src="box.webp" alt="">
+    </div>
+<!-- ----ethenic cards------- -->
+    <div class="course">
+        <h1>Ethinic</h1>
+
+        <div class="row">
+            <div class="course-col">
+                <img src="e10.webp" alt="">
+                <h3>Peter England</h3>
+                <h3>$3999</h3>
+            </div>
+            <div class="course-col">
+                <img src="e21.webp " alt="">
+                <h3>MANYWAR</h3>
+                <h3>$2999</h3>
+            </div>
+            <div class="course-col">
+                <img src="e6.webp" alt="">
+                <h3>FAB INDIA</h3>
+                <h3>$1999</h3>
+            </div>
+        </div>
+    </div>
+<!-- -------brands image------------->
+    <div class="cen">
+        <div class="b">
+            <img src="brandsonsaleresized2.gif" alt="">
+        </div>
+    </div>
+<!-- -----western cards------- -->
+    <div class="course">
+        <div class="row">
+            <div class="course-col">
+                <img src="p1.jpg" alt="">
+                <h3>PUMA</h3>
+                <h3>$5999</h3>
+            </div>
+            <div class="course-col">
+                <img src="p2.jpg" alt="">
+                <h3>Belstaff</h3>
+                <h3>$5999</h3>
+            </div>
+            <div class="course-col">
+                <img src="p3.jpg" alt="">
+                <h3>Uniqlo</h3>
+                <h3>$6999</h3>
+            </div>
+        </div>
+    </div>
+<!-- -------brands image------------->
+    <div class="brand">
+        <div class="brands">
+            <img src="edited-removebg-preview.png" alt="">
+        </div>
+    </div>
+<!-- -----------slider--------------- -->
+	<div class="slide" id="slider">
+	    <div class="slide1" onclick="showmenu1()" id="slide1">
+	        <h4 class="t">MAX 300 OFF----FIRST ORDER</h4>
+	    </div>
+	    <div class="slide2" onclick="hidemenu1()">
+	        <h4 class="t">CLICK TO CLOSE</h4>
+	    </div>
+	    <img src="dis30.jpg" alt="slider image">
+	</div>
+ <!-- ---------pic--------------- -->
+<div class="brand1">
+    <div class="brands1">
+        <img src="last.jpg" alt="">
+    </div>
+</div>
+    
+<!-- -------footer-------- -->
+    <footer>
+        <div class="f">
+            <div class="col">
+                <h4>Follow us</h4>
+                <ul>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>shop by</h4>
+                <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>New Arrival</li>
+                    <li>Store</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Payments</h4>
+                <ul>
+                    <li>Credit card</li>
+                    <li>Debit Card</li>
+                    <li>Jio Money</li>
+                    <li>Net Banking</li>
+                    <li>UPI</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+<!-- ---javascript---- -->
+    var navlinks=document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right="0";
+    }
+    function hidemenu(){
+        navlinks.style.right="-200";
+    }
+ // ----------slider-------
+    var slide = document.getElementById("slider");
+    var slide1=document.getElementById("slide1");
+    function showmenu1() {
+        slide.style.right= "0vw";
+        slide1.style.display="none";
+    }
+    function hidemenu1() {
+        slide.style.right= "-52.5vw";
+        slide1.style.display="inline";
+    }
+</script>
+</html>

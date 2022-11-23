@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="signin.css" />
+        <script language="javascript" type="text/javascript">
+            function validate(){
+                var username=document.myform.username.value;
+                var password=document.myform.password.value;
+                var name=document.myform.name.value;
+                var age=document.myform.age.value;
+                var phon_no=document.myform.phon_no.value;
+                var add=document.myform.address.value;
+                if(username==""||username==" "){
+                    alert("username cant be blank")
+                    return false
+                }
+                else if(password.length<6){
+                    alert("at least 6 characters must be specified")
+                    return false
+                }
+                else if(phon_no.length<10){
+                    alert("Phone number must be 10");
+                    return false;
+                }
+                else if(name==""||name==" "){
+                    alert("Name required")
+                    return false
+                }
+                else if(age==""||age==" "){
+                    alert("*Age required")
+                    return false
+                }
+                else if(add==""||add==" "){
+                    alert("*Adress required")
+                    return false
+                }
+            }
+        </script>
+</head>
+    <body>
+    <!-- -----logo----- -->
+        <div class="cardtop">
+        <img src="companylogo.png" class="logoimg" width="120px" >
+    	</div>  
+    <!-- -----signin and image----- -->
+        <div class="bgcontainer">
+            <div class="login">
+                <h1>Signin</h1>
+                <form name="myform" method="post" action="signin.jsp" onSubmit="return validate()">
+                    <input type="text" name="username" placeholder="Username" />
+                    <input type="password" name="password" placeholder="Password" />
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="age" placeholder="Age">
+                    <input type="text" name="phon_no" placeholder="Contact Number">
+                    <input type="text" name="address" placeholder="Address">
+                    <input type="submit" class="btn btn-primary btn-block btn-large" value="Register">
+                </form>
+            </div>   
+            <div class="car">
+                <img src="no-item-in-cart.gif" alt="">
+            </div>
+        </div>
+    </body>
+</html>
